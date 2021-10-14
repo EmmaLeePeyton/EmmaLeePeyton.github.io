@@ -3,6 +3,18 @@ body
     background:lightgreen;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.assignment
+{
+    display:flex;
+    padding: 10px;
+    margin: 10px;
+    background: plum;
+}
+.assignment img
+{
+    width: 200px;
+    padding: 10px;
+}
 h1
 {
     color:orchid;
@@ -10,5 +22,5 @@ h1
 }
 h2
 {
-    color:mediumslateblue;
+    color: royalblue;
 }
