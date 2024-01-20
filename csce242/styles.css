@@ -1,0 +1,47 @@
+body {
+    font-family:'Bold Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: url(images/1567679.jpg);
+    background-repeat: no-repeat;
+    background-size: fill;
+}
+
+
+/* structure */
+
+#content {
+    /* "cool people use hex codes" -Portia */
+    /* padding inside, margine outside*/
+    background: #F2B680;
+    padding: 5px;
+    width: 80%;
+    margin: auto;   /* center horizontally */
+    border-radius: 5px;
+}
+
+
+/* typography */
+
+h1 {
+    color: #8C1636;
+}
+
+h3 {
+    color: #731702;
+}
+
+p {
+    color: #0D0D0D;
+}
+
+h2 {
+    color: #D93B18;
+}
+
+.assignment-list a {
+    text-decoration: none;
+    color: #F23041;
+}
+
+.assignment-list a:hover {
+    background: #91F2E9;
+}
