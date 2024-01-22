@@ -17,7 +17,7 @@ body {
     margin: 5px;
     border-radius: 15px;
 }
-.assignments a:link{
+.assignments a{
     text-decoration: none;
 }
 .assignment img {
