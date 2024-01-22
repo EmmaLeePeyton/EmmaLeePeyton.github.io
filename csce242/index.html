@@ -5,25 +5,51 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id="content">
-            <!--class name and my name indicating ownership-->
-            <h1>CSCE247 - Web Applications</h1>
-            <h3>By: EmmaLee Peyton</h3>
-
-            <!--class description-->
-            <p>This class is to teach about creating web applications. 
-                I am learning how to HTML to build the basic framework 
-                of a web application. I am also learning CSS to add color 
-                and style to the application.
-            </p>
-
-            <!--list of assignments-->
+        <!--class name and my name indicating ownership-->
+        <header id="main-header">
+        <h1>CSCE247 - Web Applications</h1>
+        <h3>By: EmmaLee Peyton</h3>
+        </header>
+        <main id="main-content">
+            <!--list of assignments in boxes-->
             <h2>Assignments</h2>
-            <ol class="assignment-list">
-                <li><a href="assignments/01/index.html">Assignment01 - Basic HtML</a></li>
-                <li><a href="assignments/02/index.html">Assignment02 - Basic CSS</a></li>
-            </ol>
-
-        </div>
+            <div class="assignments">
+                <!--assignment 1-->
+                <a href="assignments/01/index.html">
+                    <section class="assignment">
+                        <h3>Assignment 1 - Basic HTML</h3>
+                        <img src="images/assignment01.png">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Lacinia quis vel eros donec ac odio tempor orci.
+                        </p>
+                    </section>
+                </a>
+                <!--assignment 2-->
+                <a href="assignments/02/index.html">
+                    <section class="assignment">
+                        <h3>Assignment 2 - Basic CSS</h3>
+                        <img src="images/assignment02.png">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Lacinia quis vel eros donec ac odio tempor orci.
+                        </p>
+                    </section>
+                </a>
+                <!--assignment 3-->
+                <a href="assignments/03/index.html">
+                    </section>
+                    <section class="assignment">
+                        <h3>Assignment 3 - PageLayout</h3>
+                        <img src="images/assignment03.png">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Lacinia quis vel eros donec ac odio tempor orci.
+                        </p>
+                    </section>
+                </a>
+            </div>
+        </main>
+        <footer id="main-footer"><p>&copy; emmaleepeyton</p></footer>
     </body>
 </html>

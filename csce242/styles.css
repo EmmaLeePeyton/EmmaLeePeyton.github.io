@@ -1,47 +1,63 @@
 body {
     font-family:'Bold Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: url(images/1567679.jpg);
-    background-repeat: no-repeat;
-    background-size: fill;
+    background: lightgray;
 }
 
 
 /* structure */
-
-#content {
-    /* "cool people use hex codes" -Portia */
-    /* padding inside, margine outside*/
-    background: #F2B680;
+#main-header, #main-content, #main-footer {
     padding: 5px;
-    width: 80%;
-    margin: auto;   /* center horizontally */
-    border-radius: 5px;
+    width: 96%;
+    margin: auto;
 }
+.assignment {
+    padding: 5px;
+    background: darkslategray;
+    flex:1;
+    margin: 5px;
+    border-radius: 15px;
+}
+.assignment a{
+    text-decoration: none;
+}
+.assignment img {
+    display: block;
+    margin: auto;
+}
+
 
 
 /* typography */
 
-h1 {
-    color: #8C1636;
+#main-header h1,
+#main-content h2,
+#main-footer
+{
+    color: darkslategray;
+    text-align: center;
 }
 
-h3 {
-    color: #731702;
+.assignment h3 {
+    text-align: center;
+    color: violet;
 }
 
-p {
-    color: #0D0D0D;
+.assignment p {
+    color: white;
 }
 
-h2 {
-    color: #D93B18;
-}
 
-.assignment-list a {
-    text-decoration: none;
-    color: #F23041;
-}
 
-.assignment-list a:hover {
-    background: #91F2E9;
+/*larger resolutions*/
+@media only screen and (min-width: 768px) {
+    .assignments {
+        display: flex;
+        gap: 10px;
+        
+    }
+    .assignment {
+        flex:1;
+        margin: 5px;
+        border-radius: 15px;
+    }
 }
