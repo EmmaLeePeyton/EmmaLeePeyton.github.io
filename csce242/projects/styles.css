@@ -46,13 +46,13 @@ body {
 /*larger resolutions*/
 @media only screen and (min-width: 768px) {
     .assignments {
-        display: flex;
+        display: grid;
         gap: 10px;
-        
-    }
-    .assignment {
+        grid-template-columns: auto auto auto;
+    }/*
+    .assignments {
         flex: 1;
         margin: 5px;
         border-radius: 15px;
-    }
+    }*/
 }
