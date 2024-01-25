@@ -1,34 +1,44 @@
+:root {
+    --background-color: lightgray;
+    --p-color: white;
+    --box-color: darkslategray;
+    --section-label-color:;
+    --box-label-color: white;
+
+}
+
+
 body {
     font-family:'Bold Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: lightgray;
+    background: var(--background-color);
 }
 
 
 /* structure */
-#main-header, #main-content, #main-footer {
+#main-header, 
+#main-content, 
+#main-footer {
     padding: 5px;
     width: 96%;
     margin: auto;
 }
-.assignment {
+.box {
     padding: 5px;
     background: darkslategray;
     flex:1;
     margin: 5px;
     border-radius: 15px;
 }
-.assignments a{
+.section a {
     text-decoration: none;
 }
-.assignment img {
+.box img {
     display: block;
     margin: auto;
 }
 
 
-
 /* typography */
-
 #main-header h1,
 #main-content h2,
 #main-footer
@@ -36,28 +46,25 @@ body {
     color: darkslategray;
     text-align: center;
 }
-
-.assignment h3 {
+.box h3 {
     text-align: center;
     color: violet;
 }
-
-.assignment p {
+.box p {
     color: white;
 }
 
 
-
 /*larger resolutions*/
 @media only screen and (min-width: 768px) {
-    .assignments {
+    .section {
         display: flex;
-        gap: 10px;
-        
+        justify-content: space-between;
+        flex-grow: 33%;
     }
-    .assignment {
-        flex: 1;
-        margin: 5px;
+    .box {
+        flex:1 1 0;
+        padding: 5px;
         border-radius: 15px;
     }
 }
