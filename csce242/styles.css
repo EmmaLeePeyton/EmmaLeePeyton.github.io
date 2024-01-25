@@ -1,10 +1,8 @@
 :root {
     --background-color: lightgray;
+    --section-color:darkslategray;
+    --label-color: violet;
     --p-color: white;
-    --box-color: darkslategray;
-    --section-label-color:;
-    --box-label-color: white;
-
 }
 
 
@@ -19,13 +17,11 @@ body {
 #main-content, 
 #main-footer {
     padding: 5px;
-    width: 96%;
     margin: auto;
 }
 .box {
     padding: 5px;
-    background: darkslategray;
-    flex:1;
+    background: var(--section-color);
     margin: 5px;
     border-radius: 15px;
 }
@@ -43,28 +39,30 @@ body {
 #main-content h2,
 #main-footer
 {
-    color: darkslategray;
+    color: var(--section-color);
     text-align: center;
 }
 .box h3 {
     text-align: center;
-    color: violet;
+    color: var(--label-color);
 }
 .box p {
-    color: white;
+    color: var(--p-color);
 }
 
 
 /*larger resolutions*/
 @media only screen and (min-width: 768px) {
     .section {
-        display: flex;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+        align-items: stretch;
         justify-content: space-between;
-        flex-grow: 33%;
     }
     .box {
-        flex:1 1 0;
-        padding: 5px;
-        border-radius: 15px;
+        flex-basis: 100%;
+        /*max-height: max-content;*/
+
     }
 }
