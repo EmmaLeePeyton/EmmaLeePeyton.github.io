@@ -1,6 +1,6 @@
 :root {
     --background-color: lightgray;
-    --section-color:darkslategray;
+    --container-color:darkslategray;
     --label-color: violet;
     --p-color: white;
 }
@@ -21,11 +21,11 @@ body {
 }
 .box {
     padding: 5px;
-    background: var(--section-color);
+    background: var(--container-color);
     margin: 5px;
     border-radius: 15px;
 }
-.section a {
+.container a {
     text-decoration: none;
 }
 .box img {
@@ -39,7 +39,7 @@ body {
 #main-content h2,
 #main-footer
 {
-    color: var(--section-color);
+    color: var(--container-color);
     text-align: center;
 }
 .box h3 {
@@ -53,16 +53,15 @@ body {
 
 /*larger resolutions*/
 @media only screen and (min-width: 768px) {
-    .section {
+    .container {
         display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
         align-items: stretch;
         justify-content: space-between;
     }
     .box {
-        flex-basis: 100%;
-        /*max-height: max-content;*/
+        
+        max-height: max-content;
 
     }
 }

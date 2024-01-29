@@ -1,0 +1,145 @@
+/* color declaration */
+:root {
+    --background-color: #ffffff;
+    --main-color-1:#73000a;
+    --main-color-2: #000000;
+    --line-color: #c7c7c7;
+}
+
+
+body {
+    font-family: "Berlingske Sans", "Arial", sans-serif;
+    background-color: var(--background-color);
+}
+
+
+/* structure */
+#header-bg-top {
+    background-color: var(--main-color-2);
+    color: var(--background-color);
+}
+/* main nav */
+#main-header-nav-1, 
+#main-header-nav-2 {
+    text-align: right;
+}
+#main-header-nav-1 ul, 
+#main-header-nav-2 ul {
+    padding: 0;
+}
+#main-header-nav-1 li, 
+#main-header-nav-2 li {
+    list-style-type: none;
+    padding: 5px;
+}
+#main-header-nav-1 li:hover, 
+#main-header-nav-2 li:hover {
+    background-color: var(--main-color-1);
+}
+#main-header-nav-1 A, 
+#main-header-nav-2 a {
+    text-decoration: none;
+    color: var(--background-color);
+}
+
+
+
+
+
+.main-header {
+}
+.header {
+    width: 100vw;
+    margin: 0;
+    padding: 20px 0;
+}
+#top-main-header {
+    background-color: var(--main-color-2);
+}
+#top-main-header {
+    display: inline-block;
+    background: url(https://sc.edu/_global_resources/img/usc_logo_horizontal_rgb_g_rev.svg) no-repeat;
+}
+.header-icon {
+    margin: 5px 10px 0px 0px;
+    float: right;
+}
+#bottom-main-header {
+    background-color: var(--main-color-1);
+}
+#main-footer {
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+    color: var(--main-color-2);
+}
+
+
+/* main nav */
+#main-nav ul {
+    padding-left: 0;
+}
+#main-nav li:link1{
+    border-top: 1px solid var(--line-color);
+}
+#main-nav li {
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid var(--line-color);
+}
+#main-nav a {
+    text-decoration: none;
+    color: var(--main-color-2);
+}
+#main-nav li:hover {
+    border: 1px solid white;
+}
+
+
+/* links column */
+.one, .two {
+    background: lightgray;
+    padding: 5px;
+    border: 1px solid darkslategray;
+}
+.one ul {
+    padding-left: 0;
+}
+.one li {
+    list-style-type: none;
+    padding: 5px;
+}
+.one a {
+    color: var(--main-color-2);
+    text-decoration: none;
+}
+.two img {
+    display: block;
+    margin: auto;
+}
+.withincolumntwo {
+    display: inline-block;
+}
+
+
+.columnsettwo {
+    background: darkslategray;
+    padding: 5px;
+    color: white;
+}
+.columnsettwo img {
+    display: block;
+    margin: auto;
+}
+
+
+
+/* typography */
+#main-header h1 {
+    color: #a52a2a;
+    text-align: center;
+}
+.columnsettwo h3{
+    text-align: center;
+}
+
+
