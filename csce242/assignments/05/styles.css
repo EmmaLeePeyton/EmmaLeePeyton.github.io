@@ -12,16 +12,22 @@ body {
     background-color: var(--background-color);
 }
 
-
 /* structure */
+/*header ribbon 1*/
 #header-bg-top {
     background-color: var(--main-color-2);
     color: var(--background-color);
+    padding: 8px;
 }
-/* main nav */
+/*navs*/
+.navigation, 
+.logo-search {
+    display: flex;
+}
 #main-header-nav-1, 
 #main-header-nav-2 {
     text-align: right;
+    font-size: 8px;
 }
 #main-header-nav-1 ul, 
 #main-header-nav-2 ul {
@@ -31,6 +37,7 @@ body {
 #main-header-nav-2 li {
     list-style-type: none;
     padding: 5px;
+    flex: 1;
 }
 #main-header-nav-1 li:hover, 
 #main-header-nav-2 li:hover {
@@ -41,47 +48,30 @@ body {
     text-decoration: none;
     color: var(--background-color);
 }
-
-
-
-
-
-.main-header {
+#header-bg-top img {
+    display: block;
+    height: 40px;
+    border: 1px solid var(--background-color);
+    margin:5px;
 }
-.header {
-    width: 100vw;
-    margin: 0;
-    padding: 20px 0;
-}
-#top-main-header {
-    background-color: var(--main-color-2);
-}
-#top-main-header {
-    display: inline-block;
-    background: url(https://sc.edu/_global_resources/img/usc_logo_horizontal_rgb_g_rev.svg) no-repeat;
-}
-.header-icon {
-    margin: 5px 10px 0px 0px;
-    float: right;
-}
-#bottom-main-header {
+
+/*header ribbon 2*/
+#header-bg-bottom {
     background-color: var(--main-color-1);
-}
-#main-footer {
-    border-radius: 0 0 5px 5px;
-    text-align: center;
-    color: var(--main-color-2);
+    color: var(--background-color);
+    padding: 2px;
 }
 
-
-/* main nav */
+/* main content */
+/*main nav*/
 #main-nav ul {
     padding-left: 0;
 }
-#main-nav li:link1{
+.first-item {
     border-top: 1px solid var(--line-color);
 }
 #main-nav li {
+    list-style-type: none;
     text-align: center;
     padding: 5px;
     border-bottom: 1px solid var(--line-color);
@@ -93,6 +83,23 @@ body {
 #main-nav li:hover {
     border: 1px solid white;
 }
+.historylevel,
+.selected,
+.internal-btn {
+    border: none;
+}
+
+
+.within-highlights {
+    display: inline-block;
+}
+.highlights img {
+    display: block;
+    margin: auto;
+    float: left;
+    padding: 5px;
+}
+
 
 
 /* links column */
