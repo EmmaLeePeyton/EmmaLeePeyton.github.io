@@ -4,6 +4,7 @@
     --main-color-1:#73000a;
     --main-color-2: #000000;
     --line-color: #c7c7c7;
+    --section-color: #ececec;
 }
 
 
@@ -25,16 +26,19 @@ body {
     display: flex;
 }
 #main-header-nav-1, 
-#main-header-nav-2 {
+#main-header-nav-2,
+#part02-nav {
     text-align: right;
     font-size: 8px;
 }
 #main-header-nav-1 ul, 
-#main-header-nav-2 ul {
+#main-header-nav-2 ul,
+#part02-nav ul {
     padding: 0;
 }
 #main-header-nav-1 li, 
-#main-header-nav-2 li {
+#main-header-nav-2 li,
+#part02-nav li {
     list-style-type: none;
     padding: 5px;
     flex: 1;
@@ -43,7 +47,7 @@ body {
 #main-header-nav-2 li:hover {
     background-color: var(--main-color-1);
 }
-#main-header-nav-1 A, 
+#main-header-nav-1 a, 
 #main-header-nav-2 a {
     text-decoration: none;
     color: var(--background-color);
@@ -74,7 +78,6 @@ body {
     list-style-type: none;
     text-align: center;
     padding: 5px;
-    border-bottom: 1px solid var(--line-color);
 }
 #main-nav a {
     text-decoration: none;
@@ -99,43 +102,26 @@ body {
     float: left;
     padding: 5px;
 }
-
-
-
-/* links column */
-.one, .two {
-    background: lightgray;
-    padding: 5px;
-    border: 1px solid darkslategray;
-}
-.one ul {
-    padding-left: 0;
-}
-.one li {
-    list-style-type: none;
-    padding: 5px;
-}
-.one a {
-    color: var(--main-color-2);
+.give-box a {
     text-decoration: none;
+    color: var(--main-color-2);
 }
-.two img {
+.give-box img {
     display: block;
     margin: auto;
-}
-.withincolumntwo {
-    display: inline-block;
-}
-
-
-.columnsettwo {
-    background: darkslategray;
+    float: right;
     padding: 5px;
-    color: white;
+    width: 200px;
 }
-.columnsettwo img {
-    display: block;
-    margin: auto;
+
+
+/*footer*/
+#footer-bg-top {
+    background-color: var(--section-color);
+}
+#part02-nav a {
+    text-decoration: none;
+    color: var(--main-color-2)
 }
 
 
@@ -145,8 +131,26 @@ body {
     color: #a52a2a;
     text-align: center;
 }
-.columnsettwo h3{
-    text-align: center;
+.internal-btn a {
+    text-align: right;
 }
 
 
+/*larger resolutions*/
+@media only screen and (min-width: 768px) {
+    #main-content {
+        display: flex;
+    }
+    #main-content-nav,
+    #right-column {
+        flex: 1;
+    }
+    #middle-column {
+        flex:2;
+        padding: 5px;
+    }
+    .give-box img{
+        float: none;
+        text-align: left;
+    }
+}
