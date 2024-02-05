@@ -56,12 +56,10 @@ body {
     .container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        align-items: stretch;
+        grid-auto-rows: auto;
         justify-content: space-between;
     }
     .box {
-        
-        max-height: max-content;
-
+        height: 93%;
     }
 }
