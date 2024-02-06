@@ -4,6 +4,10 @@ const imageChange = () => {
 };
 image1.onclick = imageChange;
 
+// i could not figure this out. I started panicing.
+
+//I really tried with this one. I about had a panic trying to do it. 
+//The stress of some things is really getting to me. I'm sorry I couldn't do it.
 const addStar = () => {
     console.log("adding a star");
     const playground = document.getElementById("star-playground");
