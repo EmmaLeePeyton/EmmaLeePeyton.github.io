@@ -1,0 +1,65 @@
+:root {
+    --background-color: lightgray;
+    --container-color:darkslategray;
+    --label-color: violet;
+    --p-color: white;
+}
+
+
+body {
+    font-family:'Bold Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: var(--background-color);
+}
+
+
+/* structure */
+#main-header, 
+#main-content, 
+#main-footer {
+    padding: 5px;
+    margin: auto;
+}
+.box {
+    padding: 5px;
+    background: var(--container-color);
+    margin: 5px;
+    border-radius: 15px;
+}
+.container a {
+    text-decoration: none;
+}
+.box img {
+    display: block;
+    margin: auto;
+}
+
+
+/* typography */
+#main-header h1,
+#main-content h2,
+#main-footer
+{
+    color: var(--container-color);
+    text-align: center;
+}
+.box h3 {
+    text-align: center;
+    color: var(--label-color);
+}
+.box p {
+    color: var(--p-color);
+}
+
+
+/*larger resolutions*/
+@media only screen and (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        justify-content: space-between;
+    }
+    .box {
+        height: 93%;
+    }
+}

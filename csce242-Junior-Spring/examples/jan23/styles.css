@@ -1,0 +1,91 @@
+:root {
+    --background-color: antiquewhite;
+    --text-color: black;
+    --content-color: lightgray;
+    --text2-color: white;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: lightgray
+}
+
+
+
+/* structure */
+
+#content {
+    /* "cool people use hex codes" -Portia */
+    /* padding inside, margine outside*/
+    background: #fff;
+    padding: 5px;
+    width: 80%;
+    margin: auto;   /* center horizontally */
+    border-radius: 5px;
+}
+#play-area {
+    width: 100%;
+    height: 400px;
+    background: violet;
+    position: relative; /*keeps the block in the area*/
+}
+#block { /*while the parent position is relative, it is stuck there*/
+    width: 150px;
+    height: 150px;
+    background: skyblue;
+    /*position: static; leaves it, default as well*/
+    /*position: absolute; position on page*/
+    position: relative; /*relative to where it originally is, good for animations and a dropdown*/
+    /*position: fixed; the element is on page no matter where you scroll*/
+    /*position: sticky; no clue*/
+    /*top: 40%;
+    left: 40%; positioning tool*/
+    animation-name: play;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+}
+
+/* animations */
+@keyframes play {
+    0% {
+        background: red;
+        opacity: 1;
+        left: 0%; /*the object needs a position*/
+        transform: rotate(0deg);
+    }
+    15% {
+        background: orange;
+    }
+    30% {
+        background: yellow;
+    }
+    45% {
+        background: green;
+        opacity: 0;
+        left: 100%;
+        transform: rotate(100deg);
+    }
+    60% {
+        background: blue;
+    }
+    80% {
+        background: indigo;
+    }
+    100% {
+        background: violet;
+        left: 0%;
+    }
+}
+/*callback function: execute after this code is done*/
+
+
+/* typography */
+
+h1 {
+    color: darkslategray;
+}
+#block p { 
+    text-align: center;
+    line-height: 150px;
+}
