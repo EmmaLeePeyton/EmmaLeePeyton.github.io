@@ -1,0 +1,22 @@
+/*general to specific styling. The bottom can overwrite the top*/
+
+/* Stricture */
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: violet;
+}
+
+/* Typography */
+div {
+    background-color:antiquewhite;
+    padding: 5px;
+    margin: 20px auto; /*allows for centering*/
+    width: 70%;
+}
+h1 {
+    color:red;
+}
+
+p {
+    color:blue;
+}
