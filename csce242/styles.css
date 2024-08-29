@@ -15,6 +15,9 @@ body {
     margin: auto;
     width: 97%;
 }
+#main-footer p {
+    text-align: center;
+}
 h1 {
     color:#733553;
     text-align: center;
