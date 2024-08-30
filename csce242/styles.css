@@ -4,15 +4,11 @@ body {
 }
 
 /* Typography */
-
-#content {
-    padding: 5px;
-    margin: auto; /*allows for centering*/
-    width: 97%;
-}
 #main-header, 
 #assignments section, 
 #main-footer {
+    padding: 5px;
+    margin: auto;
     background-color:#acb9b9;
     border-radius: 10px;
 }
