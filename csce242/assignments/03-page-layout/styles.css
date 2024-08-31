@@ -1,44 +1,29 @@
 /* Structure */
 body {
     font-family:Arial, Helvetica, sans-serif;
-    background: url("images/ocean.jpg");
+    background: #f1f2e9;
 }
 
 /* Structure */
-#content {
-    width:95%;
-    margin:auto;
-    background-color: #F5f5f5;
-    opacity:.9;
-    border-radius: 10px;
+#main-header, #main-footer {
+    background-color: #f2f0d5;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid #a4bfb8;
 }
-
-#species section {
-    background-color: lightgreen;
-    padding: 5px;
-    margin: 5px;
+#main-content{
+    color: #fff;
+    background-color: #a4bfb8;
+    border: 1px solid #a4bfb8;
 }
-
 #main-aside {
-    background-color: lightsalmon;
+    background-color: #d98282;
+    padding: 10px;
 }
-#news section {
-    background-color: lightcyan;
-}
-
-img {
-    max-width: 100%;
+.box {
+    padding: 5px;
 }
 
-#main-header {
-    background-color: skyblue;
-    border-radius: 10px;
-}
-
-#main-footer {
-    background-color: violet;
-    border-radius: 10px;
-}
 
 /* Navigation */
 #main-nav ul {
@@ -46,22 +31,34 @@ img {
 }
 #main-nav li {
     list-style: none;
-    border-bottom: 1px solid violet;
+    border: 1px solid #a4bfb8;
+    text-align: center;
 }
 #main-nav a {
     text-decoration: none;
     padding: 5px;
-    background-color: black;
-    color: violet;
+    background-color: #d98282;
+    color: #fff;
     display:block;
 }
 
 
-
 /* Typography */
-#main-footer p {
-    text-align: center;
+
+
+
+/* Aside */
+#main-aside ul {
+    padding: 0;
 }
+#main-aside li {
+    list-style: none;
+}
+#main-aside a {
+    color: #fff;
+}
+
+
 
 /* Media Queries */
 @media only screen and (min-width:600px) {
