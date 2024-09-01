@@ -4,6 +4,7 @@ body {
     background: #f1f2e9;
 }
 
+
 /* Structure */
 #main-header, #main-footer {
     background-color: #f2f0d5;
@@ -12,16 +13,15 @@ body {
     border: 1px solid #a4bfb8;
 }
 #main-content{
-    color: #fff;
     background-color: #a4bfb8;
     border: 1px solid #a4bfb8;
 }
 #main-aside {
     background-color: #d98282;
-    padding: 10px;
+    padding: 15px;
 }
 .box {
-    padding: 5px;
+    padding: 10px;
 }
 
 
@@ -43,10 +43,6 @@ body {
 }
 
 
-/* Typography */
-
-
-
 /* Aside */
 #main-aside ul {
     padding: 0;
@@ -54,16 +50,63 @@ body {
 #main-aside li {
     list-style: none;
 }
-#main-aside a {
+#main-aside a, #main-aside h3 {
     color: #fff;
 }
 
 
+/* Typography */
+h1 { /*header*/
+    text-align: center;
+    color: #5d8689;
+}
+/*main-content*/
+.box h3{ 
+    text-align: center;
+    color: #fff;
+}
+img {
+    display:block;
+    margin: auto;
+    max-width: 90%;
+}
+.box p {
+    color: #fff;
+}
+
+#footer-content, #main-footer h2 {
+    color: #5d8689;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.copyright {
+    text-align: center;
+    color: #5d8689;
+}
+.box {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.section-name {
+    padding-left: 10px;
+}
+.image, .info{ 
+    padding: 10px;
+}
+
 
 /* Media Queries */
-@media only screen and (min-width:600px) {
-    .columns {
+@media only screen and (min-width:768px) {
+    body {
+        background-color: black;
+    }
+    #main-content, .container, .img-info {
         display: flex; /* makes columns */
+    }
+    .img-info {
+        justify-content: center;
+        align-items: center;
     }
 
     .one { /* one to one ration */

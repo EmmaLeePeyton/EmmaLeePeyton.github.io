@@ -13,9 +13,7 @@ body {
 
 
 /* structure */
-#main-header, 
-#main-content, 
-#main-footer {
+#main-header, #main-content, #main-footer {
     padding: 5px;
     margin: auto;
 }
@@ -35,10 +33,7 @@ body {
 
 
 /* typography */
-#main-header h1,
-#main-content h2,
-#main-footer
-{
+#main-header h1, #main-content h2, #main-footer {
     color: var(--container-color);
     text-align: center;
 }
