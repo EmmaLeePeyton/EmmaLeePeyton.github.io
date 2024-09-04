@@ -101,7 +101,7 @@ img {
     body {
         background-color: black;
     }
-    #main-content, .container, .img-info {
+    #main-content, .container, .img-info, .columns {
         display: flex; /* makes columns */
     }
     .img-info {
