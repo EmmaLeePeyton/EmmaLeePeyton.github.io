@@ -35,11 +35,7 @@ body {
     text-align: center;
 }
 #main-nav a {
-    text-decoration: none;
-    padding: 5px;
-    background-color: #d98282;
-    color: #fff;
-    display:block;
+    background-color: var(--hover-dark);
 }
 
 

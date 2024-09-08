@@ -18,10 +18,52 @@ body {
 /* header */
 #main-header {
     background-color:  var(--dark-bg);
+    color: var(--light-text)
 }
-.columns{
+#header-top-links {
+    display: none;
+}
+.search-bar {
+    display: none;
+}
+
+#header-middle {
     display: flex;
-    float: right;
-    margin: 0 20px;
+}
+#header-middle .search-menue {
+    position:absolute;
+    right: 0;
+}
+
+#header-main-nav ul {
+    padding-left: 0;
+}
+#header-main-nav li {
+    list-style: none;
+    text-align: center;
+}
+#header-main-nav a {
+    text-decoration: none;
+    padding: 5px;
+    background-color: var(--bg-complement);
+    color: #fff;
+    display:block;
+}
+#header-main-nav a:hover {
+    background-color: var(--hover-dark);
+}
+
+/* Media Queries */
+@media only screen and (min-width:1000px) {
+    #header-main-nav ul {
+        display: flex;
+    }
+    #header-main-nav li {
+        flex:1;
+    }
+
+    #header-top-links {
+        display: none;
+    }
 }
 
