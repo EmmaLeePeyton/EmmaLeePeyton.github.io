@@ -212,12 +212,32 @@ body {
     color: var(--light-text);
     background-color: var(--bg-complement);
 }
+    /*img-icons*/
+#footer-top .img-icons {
+    width: 85%;
+    margin: auto;
+}
+.img-icons img {
+    padding-top: 2%;;
+    display: block;
+    margin: auto;
+}
+#footer-icons {
+    padding-top: 1%;
+    width: 15%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
     /*footer-nav*/
-#footer-bottom-nav {
-    background-color: var(--dark-bg);
+
+#footer-nav {
+    width: 85%;
+    margin:auto;
 }
 #footer-nav .link-section {
     justify-content: space-between;
+    padding: 2%;
 }
 #footer-nav ul {
     padding-left: 0;
@@ -243,6 +263,36 @@ body {
 #footer-nav section.one {
     flex: 1;
 }
+    /*footer-nav*/
+#footer-bottom-nav {
+    background-color: var(--dark-bg);
+}
+#footer-bottom-nav .content {
+    width: 85%;
+}
+/*footer-bottom-nav*/
+#footer-bottom-nav ul{
+    margin:auto;
+    padding-left: 0;
+}
+#footer-bottom-nav li {
+    list-style: none;
+    text-align: center;
+}
+#footer-bottom-nav a {
+    text-decoration: none;
+    padding: 5px;
+    color: var(--light-text);
+}
+#footer-bottom-nav a:hover {
+    background-color: var(--hover-dark);
+}
+#footer-bottom-nav ul {
+    display: flex;
+}
+#footer-bottonm-nav li {
+    flex-wrap: wrap;
+}
 
 
 
@@ -257,7 +307,7 @@ body {
         width: 45%;
     }
     #content-section-two,
-    #content-section-five {
+    #content-section-five .content {
         display: flex;
     }
     .content-two
@@ -267,6 +317,15 @@ body {
     #content-section-two .txt,
     #content-section-five .txt{
         padding:2%;
+    }
+    .img-icons {
+        display: flex;
+    }
+    .img-icons img {
+        margin: 0;
+    }
+    #footer-icons {
+        margin-right: 0;
     }
 }
 @media only screen and (min-width:1000px) {
@@ -285,12 +344,29 @@ body {
     #gallary section {
         flex:1;
     }
+    #content-section-five .content{
+        width: 85%;
+        margin: auto;
+    }
     #content-section-five img {
         flex:3;
     }
 
     #header-top-links {
         display: none;
+    }
+    #footer-nav,
+    #footer-nav .columns {
+        display: flex;
+    }
+    .one {
+        flex: 1;
+    }
+    .two {
+        flex: 2;
+    }
+    .three {
+        flex: 3;
     }
 }
 
