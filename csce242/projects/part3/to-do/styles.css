@@ -1,0 +1,121 @@
+/*variables*/
+:root {
+    --main-bg: #a887bf;
+    --head-bg: #8de2ac;
+    --nav-bg: #93D2F3;
+    --accent-color: #ffffff;
+    --accent-text: #5fcece;
+}
+
+/* Structure */
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: var(--main-bg);
+}
+
+/************** Header **************/
+#main-header {
+    background-color: var(--head-bg);
+}
+#title-login {
+    width: 85%;
+    margin:auto;
+}
+#title {
+    color: var(--main-bg);
+    text-align: center;
+}
+#login {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 1%;
+}
+
+    /* Navigation */
+#main-nav {
+    background-color: var(--nav-bg);
+}
+#main-nav ul {
+    padding-left: 0;
+    width: 85%; 
+    margin:auto;
+}
+#main-nav li {
+    list-style: none;
+}
+#main-nav a {
+    text-decoration: none;
+    padding: 5px;
+    background-color: var(--nav-bg);
+    color: var(--accent-color);
+    display:block;
+}
+#main-nav a:hover {
+    color: var(--main-bg);
+}
+/*****************************************/
+
+/***** Main-Content *****/
+ /*regular, past, recurring*/
+#main-content {
+    width: 85%;
+    margin: auto;
+}
+#regular section, .list {
+    background-color: var(--head-bg);
+    border-radius: 10px;
+}
+#regular section {
+    padding-bottom: 3%;
+}
+#regular section h4 {
+    text-align: center;
+    color: var(--main-bg);
+}
+.list {
+    padding: 10%;
+}
+.one {
+    margin: 3%;
+}
+
+
+h2 {
+    color: var(--main-bg);
+    background-color: var(--accent-text);
+    border-radius: 10px;
+    border-width: fit-content;
+    padding: 1%;
+}
+
+
+/**********/
+
+/***** Footer *****/
+#main-footer {
+    background-color: var(--head-bg);
+    text-align: center;
+    color: var(--main-bg);
+    padding: .1%;
+    margin-top: 1%;
+}
+/******************/
+
+/* Media Queries */
+@media only screen and (min-width:600px) {
+    .columns, #regular, #past-recurring {
+        display: flex; /* makes columns */
+    }
+
+    #main-nav li, .one {
+        flex:1;
+    }
+    .box {flex-wrap: wrap;}
+    
+}
+
+@media only screen and (min-width:768px) {
+
+}
