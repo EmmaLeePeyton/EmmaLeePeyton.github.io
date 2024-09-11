@@ -1,5 +1,6 @@
 /*variables*/
 :root {
+    --body-width: 90%;
     --main-bg: #a887bf;
     --head-bg: #8de2ac;
     --nav-bg: #93D2F3;
@@ -19,7 +20,7 @@ body {
     background-color: var(--head-bg);
 }
 #title-login {
-    width: 85%;
+    width: var(--body-width);
     margin:auto;
 }
 #title {
@@ -39,7 +40,7 @@ body {
 }
 #main-nav ul {
     padding-left: 0;
-    width: 85%; 
+    width: var(--body-width); 
     margin:auto;
 }
 #main-nav li {
@@ -60,7 +61,7 @@ body {
 /***** Main-Content *****/
  /*schedule and todo section*/
 #schedule-todo, #resources {
-    width: 85%;
+    width: var(--body-width);
     margin: auto;
 }
 .schedule, .todo {

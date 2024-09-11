@@ -1,5 +1,6 @@
 /*variables*/
 :root {
+    --body-width: 90%;
     --main-bg: #a887bf;
     --head-bg: #8de2ac;
     --nav-bg: #93D2F3;
@@ -39,7 +40,7 @@ body {
 }
 #main-nav ul {
     padding-left: 0;
-    width: 85%; 
+    width: var(--body-width); 
     margin:auto;
 }
 #main-nav li {
@@ -58,6 +59,10 @@ body {
 /**************************/
 
 /***** Main-Content *****/
+#main-content {
+    width: var(--body-width);
+    margin: auto;
+}
 #container {
     background-color: var(--nav-bg);
     padding: 3%;
