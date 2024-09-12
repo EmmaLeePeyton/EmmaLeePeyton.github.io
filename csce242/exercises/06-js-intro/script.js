@@ -26,7 +26,7 @@ myButton.onclick = () => {
     document.getElementById("stuff").classList.add("special");
 }; //allows there to be little to no memory used
 
-document.getElementById("btn-say-goodbye") = () => {
+document.getElementById("btn-say-goodbye").onclick = () => {
     document.getElementById("message").innerHTML = "goodbye Everyone!";
     document.getElementById("stuff").classList.remove("special");
 }; 
@@ -34,3 +34,15 @@ document.getElementById("btn-say-goodbye") = () => {
 /*add second button, called say goodbye 
 when clicked change text to goodbye everyone, and remove special style
 */
+
+//showing data from an input field
+/*
+document.getElementById("txt-first-name").onkeyup = () => {
+    const textBox = document.getElementById("txt-first-name");
+    document.getElementById("result").innerHTML = textBox.value;
+};
+*/
+
+document.getElementById("txt-first-name").onkeyup = (event) => {
+    document.getElementById("results").innerHTML = event.target.value;
+};
