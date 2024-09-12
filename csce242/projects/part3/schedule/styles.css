@@ -59,46 +59,6 @@ body {
 /**********/
 
 /***** Main-Content *****/
- /*schedule and todo section*/
-#schedule-todo, #resources {
-    width: var(--body-width);
-    margin: auto;
-}
-.schedule, .todo {
-    margin: 3%;
-}
-.content {
-    background-color: var(--head-bg);
-    border-radius: 10px;
-}
- /*resource section*/
-#container {
-    background-color: var(--nav-bg);
-    padding: 3%;
-    border-radius: 10px;
-}
-.box {
-    background-color: var(--head-bg);
-    border-radius: 10px;
-    padding: 3%;
-    margin: 3%;
-    display: flex;
-}
-.description {
-    text-align: center;
-}
-.quant {
-    display: flex;
-}
-.one {
-    flex: 1;
-}
-a {
-    text-decoration: none;
-}
-
-
-
 h2 {
     color: var(--main-bg);
     background-color: var(--accent-text);
