@@ -1,0 +1,24 @@
+/* Structure */
+:root {
+    --main-bg: #F5E7DC;
+    --c-one: #DE8611;
+    --c-two: #72A763;
+    --extra: #ffffff;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: var(--main-bg);
+    text-align: center;
+}
+h1 {
+    color: var(--c-one);
+}
+h3 {
+    color: var(--c-two);
+}
+#main-content {
+    display: flex;
+}
+.one {
+    flex: 1;
+}
