@@ -45,6 +45,7 @@ body {
 }
 #main-nav li {
     list-style: none;
+    text-align: center;
 }
 #main-nav a {
     text-decoration: none;
@@ -63,6 +64,13 @@ body {
     width: var(--body-width);
     margin: auto;
 }
+h3 {
+    color: var(--main-bg);
+    background-color: var(--accent-text);
+    border-radius: 10px;
+    padding: 1%;
+
+}
 #container {
     background-color: var(--nav-bg);
     padding: 3%;
@@ -73,8 +81,6 @@ body {
     border-radius: 10px;
     padding: 3%;
     margin: 3%;
-    display: flex;
-    flex-wrap: wrap;
 }
 .description {
     text-align: center;
@@ -126,17 +132,32 @@ ul, .box p {
 
 /* Media Queries */
 @media only screen and (min-width:600px) {
-    .columns, #schedule-todo, #container {
+    .columns, #schedule-todo {
         display: flex; /* makes columns */
     }
-
+    #container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 1fr;
+    }
     #main-nav li, .schedule, .todo, .box {
         flex:1;
     }
     .box {flex-wrap: wrap;}
     
 }
-
-@media only screen and (min-width:768px) {
-
+@media only screen and (min-width:700px) {
+    #container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media only screen and (min-width:1000px) {
+    #container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media only screen and (min-width:1200px) {
+    #container {
+        grid-template-columns: repeat(6, 1fr);
+    }
 }

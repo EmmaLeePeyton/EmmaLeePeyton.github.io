@@ -45,6 +45,7 @@ body {
 }
 #main-nav li {
     list-style: none;
+    text-align: center;
 }
 #main-nav a {
     text-decoration: none;
@@ -59,13 +60,21 @@ body {
 /**********/
 
 /***** Main-Content *****/
-h2 {
-    color: var(--main-bg);
+
+a {
+    text-decoration: none;
+    padding: 5px;
     background-color: var(--accent-text);
+    color: var(--accent-color);
     border-radius: 10px;
-    border-width: fit-content;
+    display:block;
     padding: 1%;
 }
+a:hover {}
+p {
+    color: var(--accent-color);
+}
+
 
 
 /**********/
