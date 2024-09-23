@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            Class: CSCE242
+            By: EmmaLee Peyton
+
+            Prior Description:
+            Everything is formatted so it is all seperated and easy to read and follow.
+            It makes it easier for me to break things up and follow my train of thought efficiently.
+        -->
+        <!-- link -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- tab name -->
+        <title>Java Script</title> 
+    </head>
+    <body>
+        <header id="main-header">
+            <h1>Assignment 6</h1>
+            <h2>If Statements</h2>
+            <div id="toggle-nav" class="change-tog-nav"></div>
+            <nav id="main-nav" class="menu">
+                <ul id= "nav-items" class="hidden-small">
+                    <li><a id="ex-one" href="#">Exercise 1</a></li>
+                    <li><a id="ex-two" href="#">Exercise 2</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="main-content">
+            
+            <div id="exercise-one" class="">
+                <h3>Color Slider</h3>
+                <p>
+                    <input type="range" min="1" max="100" value="0" class="slider">
+                </p>
+            </div>
+            <div id="exercise-two" class="hidden">
+                <h3>Picture Chooser</h3>
+                <section id="img-sizes">
+                    <p><button id="btn-small-pic">Small</button></p>
+                    <p><button id="btn-medium-pic">Medium</button></p>
+                    <p><button id="btn-large-pic">Large</button></p>
+                </section>
+                <img id="displayedImage">
+            </div>
+        </div>
+    </body>
+    <footer id="main-footer">
+        <p>&copy; EmmaLeePeyton</p>
+    </footer>
+    <script src="script.js"></script>
+</html>

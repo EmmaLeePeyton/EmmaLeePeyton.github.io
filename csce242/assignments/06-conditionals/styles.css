@@ -1,0 +1,145 @@
+/* Structure */
+:root {
+    --main-bg: #F5E7DC;
+    --c-one: #DE8611;
+    --c-two: #72A763;
+    --extra: #ffffff;
+    --body-width-small: 90%;
+    --body-width-medium: 60%;
+    --body-width-large: 30%;
+    --arrow-size: 5px;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: var(--main-bg);
+    width: var(--body-width-small);
+    margin: auto;
+}
+
+#main-header h1, #main-header h2, #main-footer {
+    text-align: center;
+}
+
+h1 {
+    color: var(--c-one);
+}
+h2, #main-footer {
+    color: var(--c-two);
+}
+
+/*arrows*/
+.change-toggle-nav {
+    border-top: var(--arrow-size) solid transparent;
+    border-bottom: var(--arrow-size) solid var(--c-one);
+}
+#toggle-nav {
+    width: 0; 
+    height: 0; 
+    border-left: var(--arrow-size) solid transparent;
+    border-right: var(--arrow-size) solid transparent;
+    border-top: var(--arrow-size) solid var(--c-one);
+    cursor: pointer;
+}
+
+
+/*main-nav*/
+#main-nav {
+    text-align: left;
+}
+#main-nav ul {
+    padding-left: 0;
+}
+#main-nav li {
+    list-style: none;
+}
+#main-nav a {
+    text-decoration: none;
+    color: var(--c-one);
+    display:block;
+}
+
+#main-content {
+    text-align: center;
+}
+#img-sizes {
+    display: flex;
+}
+#exercise-two {
+    background-color: var(--c-two);
+}
+.ran-img {
+    background-color: var(--c-two);
+    border-radius: 10px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.slider:hover {
+    opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: var(--c-two);
+    cursor: pointer;
+}
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: var(--c-two);
+    cursor: pointer;
+}
+
+/* Visibility */
+.see {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+.hidden-small {
+    display: none;
+}
+
+/* Larger Resolutions*/
+@media only screen and (min-width: 750px) {
+    body {
+        width: var(--body-width-medium);
+    }
+    .arrow {
+        display: none;
+    }
+    #main-nav ul {
+        justify-content: center;
+        display: flex;
+    }
+    #main-nav li {
+        padding: 0 10px;
+        border-right: solid 1px black;
+    }
+    #main-nav li:last-child{
+        border-right: none;
+    }
+
+    #toggle-nav {
+      display: none;
+    }
+    .hidden-small {
+      display: flex;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    body {
+        width: var(--body-width-large);
+    }
+}
