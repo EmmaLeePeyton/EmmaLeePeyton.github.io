@@ -127,6 +127,9 @@ ul, .box p {
 
 /***** Footer *****/
 #main-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
     background-color: var(--head-bg);
     text-align: center;
     color: var(--main-bg);
