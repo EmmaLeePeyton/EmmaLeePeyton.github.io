@@ -103,7 +103,9 @@ a {
     text-decoration: none;
 }
 
-
+#resources img {
+    width: 100%;
+}
 
 h2 span{
     color: var(--main-bg);
