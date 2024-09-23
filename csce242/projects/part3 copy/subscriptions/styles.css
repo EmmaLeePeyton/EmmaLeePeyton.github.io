@@ -1,0 +1,139 @@
+/*variables*/
+:root {
+    --body-width: 90%;
+    --main-bg: #a887bf;
+    --head-bg: #8de2ac;
+    --nav-bg: #93D2F3;
+    --accent-color: #ffffff;
+    --accent-text: #5fcece;
+}
+
+/* Structure */
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: var(--main-bg);
+}
+
+/***** Header *****/
+#main-header {
+    background-color: var(--head-bg);
+}
+#title-login {
+    width: var(--body-width);
+    margin:auto;
+}
+#title {
+    color: var(--main-bg);
+    text-align: center;
+}
+#login {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 1%;
+}
+
+    /* Navigation */
+#main-nav {
+    background-color: var(--nav-bg);
+}
+#main-nav ul {
+    padding-left: 0;
+    width: var(--body-width); 
+    margin:auto;
+}
+#main-nav li {
+    list-style: none;
+    text-align: center;
+}
+#main-nav a {
+    text-decoration: none;
+    padding: 5px;
+    background-color: var(--nav-bg);
+    color: var(--accent-color);
+    display:block;
+}
+#main-nav a:hover {
+    color: var(--main-bg);
+}
+/**********/
+
+/***** Main-Content *****/
+#sub-content {
+    display: flex;
+}
+#sub-aside {
+    flex: 1;
+    background-color: var(--head-bg);
+    padding: 1%;
+}
+#sub-aside .sub-search { /* HOW DO i MAKE THE SEARCH BACKGROUND TRANSPARENT? */
+    background-color: transparent;
+    border: none;
+}
+#sub-aside ul {
+    padding: 0;
+}
+#sub-aside li {
+    list-style: none;
+}
+#sub-aside a {
+    color: var(--main-bg);
+    display: block;
+}
+
+#sub-left {
+    flex: 3;
+    padding: 2%;
+}
+#sub-left .sub-card {
+    margin: 5%;
+    padding: 2%;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+}
+.pw-n, .sub-card .btns-edit-delete {
+    display: flex;
+}
+.pw-n .one  {
+    flex: 1;
+}
+.sub-card .btns-edit-delete p {
+    margin: 1%;
+}
+.sub-card .pw-n a {
+    text-decoration: none;
+    color: black;
+}
+.sub-card .pw-n a:hover {
+    color: var(--main-bg)
+}
+
+/**********/
+
+/***** Footer *****/
+#main-footer {
+    background-color: var(--head-bg);
+    text-align: center;
+    color: var(--main-bg);
+    padding: .1%;
+    margin-top: 1%;
+}
+
+/* Media Queries */
+@media only screen and (min-width:600px) {
+    .columns, #schedule-todo, #container {
+        display: flex; /* makes columns */
+    }
+
+    #main-nav li, .schedule, .todo, .box {
+        flex:1;
+    }
+    .box {flex-wrap: wrap;}
+    
+}
+
+@media only screen and (min-width:768px) {
+
+}
