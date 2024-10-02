@@ -1,11 +1,11 @@
 //array
 let imageArray = [];
-imageArray["birthday"] = "Happy Birthday!"; 
-imageArray["clown"] = "That was scary! EEP!";
-imageArray["rain"] = "Can't forget my umbrella!";
-imageArray["read"] = "I am halucinating right now...";
-imageArray["shovel"] = "Let It Grow!";
-imageArray["work"] = "Not this again...";
+imageArray["Birthday"] = "Happy Birthday!"; 
+imageArray["Clown"] = "That was scary! EEP!";
+imageArray["Rain"] = "Can't forget my umbrella!";
+imageArray["Read"] = "I am halucinating right now...";
+imageArray["Shovel"] = "Let It Grow!";
+imageArray["Work"] = "Not this again...";
 
 //create the table
 const table = document.getElementById("img-container");
