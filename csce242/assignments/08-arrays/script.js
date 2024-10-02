@@ -1,0 +1,40 @@
+//array
+let imageArray = [];
+imageArray["birthday"] = "Happy Birthday!"; 
+imageArray["clown"] = "That was scary! EEP!";
+imageArray["rain"] = "Can't forget my umbrella!";
+imageArray["read"] = "I am halucinating right now...";
+imageArray["shovel"] = "Let It Grow!";
+imageArray["work"] = "Not this again...";
+
+//create the table
+const table = document.getElementById("img-container");
+//count for table row length
+let rowCheck = 0;
+
+//Instantiating Array
+for (let image in imageArray) {
+    // create a new row
+    if (rowCheck % 3 == 0) {
+        tr = document.createElement("tr");
+        table.append(tr);
+    }rowCheck++;
+    
+    // populating the table
+    let img = document.createElement("img"); //create image
+    img.src = `./images/${image}.jpg`; //where to find image
+    img.classList.add("img-block"); //adds image style
+    let td = document.createElement("td"); //create data
+    td.append(img);
+    tr.append(td);
+    
+    //displayed on click
+    td.onclick = () => {
+        // name of image
+        let name = document.getElementById("name");
+        name.innerHTML = `${image}`;
+        // description of image
+        let description = document.getElementById("description");
+        description.innerHTML = `${imageArray[image]}`;
+    }
+};

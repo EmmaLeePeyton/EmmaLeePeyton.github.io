@@ -1,0 +1,82 @@
+/* Structure */
+:root {
+    --main-bg: #F5E7DC;
+    --c-one: #DE8611;
+    --c-two: #72A763;
+    --extra: #ffffff;
+    --body-width-small: 90%;
+    --body-width-medium: 70%;
+    --body-width-large: 50%;
+    --arrow-size: 5px;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: var(--main-bg);
+    width: var(--body-width-small);
+    margin: auto;
+}
+#main-header, #main-footer {
+    text-align: center;
+}
+
+h1 {
+    color: var(--c-one);
+}
+h2, #main-footer {
+    color: var(--c-two);
+}
+
+/* star */
+#container {
+    background-color: var(--c-two);
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    padding: 3%;
+}
+
+#star-container {
+    position: relative; /* allows for the stars to be placed in it */
+    width: 400px;
+    height: 300px;
+    background-color: black;
+    margin: 20px auto;
+}
+#star-count{
+    width: 80px;
+}
+.star {
+    position: absolute;
+    color: yellow;
+    font-size: 20px;
+}
+.star:hover {
+    cursor: pointer;
+}
+
+#error {
+    color: red;
+    font-weight: bold;
+}
+
+/* Visibility */
+.see {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+.hidden-small {
+    display: none;
+}
+
+/* Larger Resolutions*/
+@media only screen and (min-width: 750px) {
+    
+    .hidden-small {
+      display: flex;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    
+}
