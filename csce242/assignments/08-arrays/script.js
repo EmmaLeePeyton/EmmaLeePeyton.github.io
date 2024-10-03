@@ -22,7 +22,7 @@ for (let image in imageArray) {
     
     // populating the table
     let img = document.createElement("img"); //create image
-    img.src = `./images/${image}.jpg`; //where to find image
+    img.src = `./images/${image.toLowerCase()}.jpg`; //where to find image
     img.classList.add("img-block"); //adds image style
     let td = document.createElement("td"); //create data
     td.append(img);
