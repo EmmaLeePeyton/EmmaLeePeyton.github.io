@@ -73,7 +73,7 @@ body {
 
 
 /* hamburger menue */
-#nav-toggle div {
+#toggle-nav div {
     width: 35px;
     height: 5px;
     background: gray;
@@ -101,7 +101,9 @@ p {
 .hidden {
     display: none;
 }
-
+.hidden-small {
+    display: none;
+}
 
 
 @media only screen and (min-width: 900px) {
