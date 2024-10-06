@@ -1,33 +1,21 @@
+:root {
+    --main-bg: linear-gradient(#52ba5d, #fff);
+    --footer: linear-gradient(#fff, #52ba5d);
+    --content: #fff;
+    --complement: #52ba5d;
+    --highlight: #fff200;
+    --standard: #000;
+}
+
 /*main content*/
-/*images*/
-.content-img {
-    display: block;
-    margin: auto;
-    width: 400px;
-}
-#bottom-img {
-    display: block;
-    margin: auto;
-}
 /* typography */
 
 h1 {
-    color: #52ba5d;
+    color: var(--complement);
     text-align: center;
-}
-h2 {
-    background-color: #52ba5d;
-    color: #fff200;
-    padding: 5px;
 }
 p {
     background-color: transparent;
-    color: #000;
+    color: var(--standard);
     padding: 5px;
-}
-
-
-
-@media only screen and (min-width: 900px) {
-    
 }
