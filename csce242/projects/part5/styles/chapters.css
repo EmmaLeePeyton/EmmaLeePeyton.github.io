@@ -1,0 +1,60 @@
+/*main content*/
+#main-content {
+    padding-top: 2px;
+}
+.one {
+    background-color: #52ba5d;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.one ul {
+    padding-left: 0;
+}
+.one li {
+    list-style-type: none;
+    padding: 5px;
+    border-bottom: 1px solid #fff200;
+}
+.one a {
+    text-decoration: none;
+    color: #fff200;
+}
+
+/* typography */
+
+h1 {
+    color: #52ba5d;
+    text-align: center;
+}
+h2 {
+    background-color: #52ba5d;
+    color: #fff200;
+    padding: 5px;
+}
+h4 {
+    color: #fff200;
+    padding-left: 8px;
+}
+p {
+    background-color: transparent;
+    color: #000;
+    padding: 5px;
+}
+
+/* sizing */
+.columns {
+    display: flex;
+}
+.one {
+    flex: 1;
+}
+.one {
+    background-image: #52ba5d;
+    margin: none;
+    margin-right: 5px;
+    height: 100%;
+}
+.two {
+    flex: 4;
+}
