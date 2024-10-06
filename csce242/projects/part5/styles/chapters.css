@@ -4,11 +4,10 @@
 }
 .one {
     background-color: #52ba5d;
-    height: 100%;
     border-radius: 0 5px 5px 0;
 }
 
-.one ul {
+.one ol {
     padding-left: 0;
 }
 .one li {
@@ -53,7 +52,6 @@ p {
     background-image: #52ba5d;
     margin: none;
     margin-right: 5px;
-    height: 100%;
 }
 .two {
     flex: 4;

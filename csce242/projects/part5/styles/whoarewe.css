@@ -1,6 +1,10 @@
 /*main content*/
+#main-content {
+    padding-top: 2px;
+}
 .one {
     background-color: #52ba5d;
+    border-radius: 0 5px 5px 0;
 }
 
 .one ul {
@@ -8,7 +12,7 @@
 }
 .one li {
     list-style-type: none;
-    padding: 8px;
+    padding: 5px;
     border-bottom: 1px solid #fff200;
 }
 .one a {
@@ -40,7 +44,7 @@ h2 {
 }
 h4 {
     color: #fff200;
-    padding: 8px;
+    padding-left: 8px;
 }
 p {
     background-color: transparent;
@@ -61,10 +65,5 @@ p {
     margin-right: 5px;
 }
 .two {
-    flex: 2;
-}
-@media only screen and (min-width: 900px) {
-    .two {
-        flex:4;
-    }
+    flex: 4;
 }
