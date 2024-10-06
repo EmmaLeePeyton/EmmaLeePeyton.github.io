@@ -1,6 +1,7 @@
 /*main content*/
 #main-content {
     padding-top: 2px;
+    height: 100%;
 }
 .one {
     background-color: #52ba5d;
@@ -44,6 +45,7 @@ p {
 /* sizing */
 .columns {
     display: flex;
+    height: 100%;
 }
 .one {
     flex: 1;
