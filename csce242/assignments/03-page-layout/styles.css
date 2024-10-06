@@ -33,9 +33,12 @@ body {
     list-style: none;
     border: 1px solid #a4bfb8;
     text-align: center;
+    background-color: #d98282;
 }
 #main-nav a {
-    background-color: var(--hover-dark);
+    display: block;
+    text-decoration: none;
+    color: #fff;
 }
 
 
