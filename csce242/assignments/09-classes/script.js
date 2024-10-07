@@ -30,26 +30,6 @@ class Bird {
     return section;
   }
 
-  createModalContent() {
-    const modalContent = document.createElement("div");
-
-    const columnsDiv = document.createElement("div");
-    modalContent.append(columnsDiv);
-    const firstColumn = document.createElement("div");
-    columnsDiv.append(firstColumn);
-    const secondColumn = document.createElement("div");
-    columnsDiv.append(secondColumn);
-
-    firstColumn.append(this.paragraph("Size", this.size));
-    firstColumn.append(this.paragraph("Life Span", this.lifeSpan));
-    firstColumn.append(this.paragraph("Food", this.food));
-    firstColumn.append(this.paragraph("Habitat", this.habitat));
-    firstColumn.append(this.paragraph("Fact", this.fact));
-
-    secondColumn.append(this.picture(this.pic));
-
-    return modalContent;
-}
 
   picture(info){
     const pic = document.createElement("img");
@@ -57,12 +37,28 @@ class Bird {
     return pic;
   }
 
-  paragraph(title, info){
-    const p = document.createElement("p");
-    p.innerHTML = `<strong>${title}<strong>: ${info}`;
-    return p;
-  }
+  showDetails() {
+    const modal = document.getElementById("modal");
+    const modalContent = document.querySelector(".modal-content");
+    const closeBtn = document.querySelector(".close-btn");   
 
+
+    // Set modal content
+    document.getElementById("modal-title").textContent = this.title;
+    document.getElementById("modal-size").textContent = this.size;
+    document.getElementById("modal-lifespan").textContent = this.lifeSpan;
+    document.getElementById("modal-food").textContent = this.food;
+    document.getElementById("modal-habitat").textContent = this.habitat;
+    document.getElementById("modal-fact").textContent = this.fact;
+
+    // Show modal
+    modal.classList.remove("hidden");
+
+    // Close modal on button click
+    closeBtn.addEventListener("click", () => {
+        modal.classList.add("hidden");
+    });
+  } 
 /*
     //make section with dog info then display
     const section = document.createElement("section");
@@ -89,7 +85,6 @@ class Bird {
   
     secondColumn.append(this.picture(this.pic));
 */
-
 }
 
 const birds = [];
