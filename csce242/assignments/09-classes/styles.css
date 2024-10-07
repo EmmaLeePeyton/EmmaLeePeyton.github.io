@@ -56,24 +56,25 @@ body {
 /* Modal/ Pop-up */
 .modal {
     display: none;
-    position: fixed; /* Ensures modal covers the entire screen */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semitransparent background */
-    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999; 
+
 }
 
 .modal-content {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centers the modal content */
+    transform: translate(-50%, -50%);
     background-color: white;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    border-radius: 5px; 
+
 }
 
 .close-btn {
@@ -82,25 +83,10 @@ body {
     right: 10px;
     cursor: pointer;
     font-size: 20px;
-    font-weight: bold; /* Makes close button text bolder */
 }
 
-.modal-image {
-    margin-bottom: 10px; /* Adds spacing below the image */
-    text-align: center; /* Centers the image horizontally */
-}
-
-.modal-info {
-    display: flex; /* Arranges information in a row */
-    flex-wrap: wrap; /* Allows information to wrap to multiple lines if needed */
-    justify-content: space-between; /* Distributes information evenly */
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
-}
-
-.modal-info p {
-    margin: 5px 0; /* Adds spacing between information paragraphs */
-    font-weight: bold; /* Makes information labels bold */
+.hidden {
+    display: none;
 }
 
 /* Main Footer */
