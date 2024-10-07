@@ -68,7 +68,6 @@ birds.push(new Bird("Purple Finch", "29.1 grams", 5, "bees and wasps", "open woo
 birds.forEach((bird)=>{
   document.getElementById("bird-list").append(bird.item);
 });
-  
 
 
 /*

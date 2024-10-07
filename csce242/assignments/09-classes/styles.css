@@ -37,6 +37,8 @@ body {
     margin: 2%;
     background-color: var(--c-two);
     text-align: center;
+    padding-bottom: 2%;
+    border-radius: 10%;
 }
 .bird img {
     display:block;
@@ -45,13 +47,6 @@ body {
     max-width: 90%;
     border-radius: 10px;
 }
-.bird a {
-    text-decoration: none;
-    color: var(--extra);
-    display: block;
-    padding-bottom: 6%;
-}
-
 
 /* Modal/ Pop-up */
 .modal {
