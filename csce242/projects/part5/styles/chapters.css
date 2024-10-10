@@ -10,6 +10,9 @@
 /*main content*/
 #main-content {
     padding-top: 2px;
+    height: auto;
+}
+.columns {
     height: 100%;
 }
 .one {
