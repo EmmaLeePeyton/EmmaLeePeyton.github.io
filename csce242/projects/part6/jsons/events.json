@@ -1,0 +1,14 @@
+[
+  {
+    "name": "default",
+    "description": "No events at this time"
+  },
+  {
+    "name": "spring",
+    "description": "some events entered"
+  },
+  {
+    "name": "fall",
+    "description": "other events entered"
+  }
+]
