@@ -19,3 +19,10 @@ p {
     color: var(--standard);
     padding: 5px;
 }
+
+
+@media only screen and (min-width: 900px) {
+    #main-content {
+        display: flex;
+    }
+}

@@ -20,20 +20,27 @@
 }
 .one li {
     list-style-type: none;
-    padding: 5px;
     border-bottom: 1px solid var(--highlight);
 }
 .one a {
     text-decoration: none;
     color: var(--highlight);
+    display: block;
+    padding: 5px;
 }
 
 /*images*/
-.content-img {
+.pledge-img {
     display: block;
     margin: auto;
-    width: 400px;
+    width: 100%;
 }
+.history-img {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
 #bottom-img {
     display: block;
     margin: auto;
@@ -71,4 +78,20 @@ p {
 }
 .two {
     flex: 4;
+}
+
+.section-hidden {
+    display: none;
+}
+
+@media only screen and (min-width: 900px) {
+    .pledge-img {
+        width: 70%;
+    }
+    .history-img {
+        width: 20%;
+    }
+    .section-hidden {
+        display: block;
+    }
 }

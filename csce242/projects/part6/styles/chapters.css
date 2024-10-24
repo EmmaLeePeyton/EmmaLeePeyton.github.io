@@ -25,19 +25,20 @@
 }
 .one li {
     list-style-type: none;
-    padding: 5px;
     border-bottom: 1px solid var(--highlight);
 }
 .one a {
     text-decoration: none;
     color: var(--highlight);
+    display: block;
+    padding: 5px;
 }
 
 /* typography */
 
 h1 {
     color: var(--complement);
-    text-align: center;
+    padding-left: 5px;
 }
 h2 {
     background-color: var(--complement);
@@ -52,6 +53,10 @@ p {
     background-color: transparent;
     color: var(--standard);
     padding: 5px;
+}
+
+.hidden-aside {
+    display: none;
 }
 
 /* sizing */
@@ -69,4 +74,10 @@ p {
 }
 .two {
     flex: 4;
+}
+
+@media only screen and (min-width: 900px) {
+    .hidden-aside {
+        display: block;
+    }
 }
