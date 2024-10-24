@@ -59,6 +59,7 @@ img {
 }
 .server a {
     color: #357355;
+    text-decoration: underline;
 }
 
 
